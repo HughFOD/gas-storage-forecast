@@ -1,19 +1,19 @@
 model,season,weeks,MAE (Bcf),RMSE (Bcf),bias (Bcf),beats 5-yr avg (% of weeks),surprise direction right (%),80% range covered (%)
-Weather-adjusted 5-yr avg,all year,461,20.2,26.09,-2.87,57.92,74.75,75.4
-Ridge regression,all year,461,14.46,18.43,-5.28,69.63,85.1,78.39
-Gradient boosting,all year,461,17.78,24.2,-2.34,65.73,80.56,76.09
-5-year average,all year,461,30.11,44.23,-0.57,0.0,,77.7
-Same week last year,all year,461,39.69,58.18,-0.18,37.53,51.26,75.63
-Last week's change,all year,461,34.7,52.02,-0.61,42.95,63.89,76.55
+Weather-adjusted 5-yr avg,all year,462,20.24,26.13,-2.78,57.79,74.81,75.23
+Ridge regression,all year,462,14.46,18.42,-5.24,69.7,85.14,78.21
+Gradient boosting,all year,462,17.75,24.17,-2.33,65.8,80.6,76.15
+5-year average,all year,462,30.1,44.2,-0.63,0.0,,77.75
+Same week last year,all year,462,39.64,58.12,-0.21,37.66,51.39,75.69
+Last week's change,all year,462,34.66,51.97,-0.58,43.07,63.98,76.61
 Weather-adjusted 5-yr avg,injection,275,17.65,22.35,-4.52,47.64,66.97,80.53
 Ridge regression,injection,275,13.29,16.74,-6.39,60.36,79.82,84.73
 Gradient boosting,injection,275,14.06,18.53,-2.29,58.55,74.31,81.68
 5-year average,injection,275,17.24,22.85,0.28,0.0,,92.37
 Same week last year,injection,275,22.97,29.85,-0.33,36.36,52.29,90.84
 Last week's change,injection,275,18.89,24.56,-1.9,43.27,67.43,92.75
-Weather-adjusted 5-yr avg,withdrawal,186,23.97,30.81,-0.43,73.12,84.27,67.63
-Ridge regression,withdrawal,186,16.19,20.67,-3.64,83.33,91.57,68.79
-Gradient boosting,withdrawal,186,23.28,30.72,-2.41,76.34,88.2,67.63
-5-year average,withdrawal,186,49.13,63.85,-1.84,0.0,,55.49
-Same week last year,withdrawal,186,64.41,84.1,0.06,39.25,50.0,52.6
-Last week's change,withdrawal,186,58.09,76.26,1.28,42.47,59.55,52.02
+Weather-adjusted 5-yr avg,withdrawal,187,24.04,30.85,-0.22,72.73,84.36,67.24
+Ridge regression,withdrawal,187,16.18,20.64,-3.54,83.42,91.62,68.39
+Gradient boosting,withdrawal,187,23.18,30.64,-2.37,76.47,88.27,67.82
+5-year average,withdrawal,187,49.01,63.71,-1.98,0.0,,55.75
+Same week last year,withdrawal,187,64.16,83.88,-0.03,39.57,50.28,52.87
+Last week's change,withdrawal,187,57.87,76.07,1.36,42.78,59.78,52.3
