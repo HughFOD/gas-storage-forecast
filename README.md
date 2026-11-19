@@ -2,7 +2,7 @@
 
 **Website: https://hughod.com/gas-storage-nowcast/**
 
-**Result:** misses the weekly EIA storage number by 13 Bcf on average, vs 31 for the 5-year average, over 251 weeks (2022 to October 2026) that played no part in building the model.
+**Result:** misses the weekly EIA storage number by 13 Bcf on average, vs 31 for the 5-year average, over 253 weeks (2022 to November 2026) that played no part in building the model. The website has the latest numbers.
 
 ![Predictions vs. what EIA reported, last two years](docs/img/forecast_vs_actual.png)
 
@@ -40,15 +40,15 @@ Scores reported for each method: average miss (Bcf), how often it beats the 5-ye
 
 ## Findings
 
-**How the test was kept honest.** Every forecast is walk-forward: to predict a week, the models are trained only on earlier weeks. On top of that, every modelling choice (which features, which model) was made looking only at 2018-2021. The numbers below are for **2022 to October 2026 (251 weeks)**, which played no part in those choices.
+**How the test was kept honest.** Every forecast is walk-forward: to predict a week, the models are trained only on earlier weeks. On top of that, every modelling choice (which features, which model) was made looking only at 2018-2021. The numbers below are for **2022 to November 2026 (253 weeks)**, which played no part in those choices.
 
 | Method | Avg miss (Bcf) | Winter miss | Summer miss | Surprise direction right |
 |---|---:|---:|---:|---:|
 | **Ridge regression** | **13.1** | **15.4** | **11.6** | **86%** |
-| Gradient boosting | 16.2 | 20.9 | 13.1 | 83% |
-| Weather-adjusted 5-yr avg | 18.3 | 21.1 | 16.4 | 80% |
-| 5-year average | 31.4 | 53.9 | 16.7 | – |
-| Last week's change | 35.2 | 61.1 | 18.4 | 65% |
+| Gradient boosting | 16.1 | 20.9 | 13.1 | 83% |
+| Weather-adjusted 5-yr avg | 18.4 | 21.1 | 16.4 | 80% |
+| 5-year average | 31.3 | 53.9 | 16.7 | – |
+| Last week's change | 35.0 | 61.1 | 18.4 | 65% |
 | Same week last year | 40.1 | 70.2 | 20.6 | 53% |
 
 - **The best model's average miss is 58% smaller than the 5-year average's** (13 vs 31 Bcf), and it calls whether the report comes in above or below the 5-year average correctly 86% of the time.
@@ -56,11 +56,11 @@ Scores reported for each method: average miss (Bcf), how often it beats the 5-ye
 - **Summer was the first version's weak spot** (it barely beat the 5-year average). Adding last week's weather, curvature for extreme cold and heat, and season-aware weather effects brought the summer miss to 12 Bcf vs 17.
 - **Simple beat fancy.** Ridge regression beat gradient-boosted trees on both the years used to choose it and the later years.
 - **The 80% ranges are honest:** they contained the real number 80% of the time.
-- **Misses point to real events.** The largest was February 2021 (Winter Storm Uri): EIA reported −338 Bcf vs the model's −257, because freezing wells cut production on top of the cold. Such weeks are listed in `quality.csv`.
+- **Misses point to real events.** The largest was February 2021 (Winter Storm Uri): EIA reported −338 Bcf vs the model's −268, because freezing wells cut production on top of the cold. Such weeks are listed in `quality.csv`.
 
 The website updates itself every day after EIA's release (see `.github/workflows/update.yml`), so its numbers and the latest nowcast stay current.
 
-**Live test:** the week ending Oct 30, 2026 was forecast before EIA's Nov 5 release at about **+83 Bcf** (5-year average +70). *Add the actual number here once it's out.*
+**Live test:** the week ending Oct 30, 2026 was forecast before EIA's Nov 5 release at about **+83 Bcf** (5-year average +70). EIA reported **+77 Bcf**, so the model was 6 Bcf off and the 5-year average 7 Bcf off.
 
 Project website: **https://hughod.com/gas-storage-nowcast/**
 
