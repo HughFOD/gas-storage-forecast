@@ -1,5 +1,11 @@
 # Natural gas storage nowcast
 
+**Website: https://hughod.com/gas-storage-nowcast/**
+
+**Result:** misses the weekly EIA storage number by 13 Bcf on average, vs 31 for the 5-year average, over 251 weeks (2022 to October 2026) that played no part in building the model.
+
+![Predictions vs. what EIA reported, last two years](docs/img/forecast_vs_actual.png)
+
 Every Thursday at 10:30 ET the US Energy Information Administration (EIA) publishes how much natural gas went into or out of underground storage in the Lower 48 the week before. It is one of the most closely watched numbers in energy markets: when it comes in different from what traders expected, natural gas futures move within seconds.
 
 This project predicts that number before it is released, using only information a trader would have on Thursday morning, then checks how those predictions would actually have done since 2018.
@@ -56,7 +62,7 @@ The website updates itself every day after EIA's release (see `.github/workflows
 
 **Live test:** the week ending Oct 30, 2026 was forecast before EIA's Nov 5 release at about **+83 Bcf** (5-year average +70). *Add the actual number here once it's out.*
 
-Project website: **https://hughfod.github.io/gas-storage-nowcast/**
+Project website: **https://hughod.com/gas-storage-nowcast/**
 
 ## Analyst consensus (optional)
 
