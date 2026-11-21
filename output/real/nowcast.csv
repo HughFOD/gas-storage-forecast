@@ -1,4 +1,7 @@
 week_ending,model,pred,lower,upper,avg5,forecast_days
-2026-11-20,Weather-adjusted 5-yr avg,0.5,-18.0,31.6,-24.4,6.0
-2026-11-20,Ridge regression,-2.1,-11.2,21.5,-24.4,6.0
-2026-11-20,Gradient boosting,-15.4,-33.7,11.4,-24.4,6.0
+2026-11-20,Weather-adjusted 5-yr avg,1.2,-17.3,32.3,-24.4,5.0
+2026-11-27,Weather-adjusted 5-yr avg,9.3,-9.2,40.4,-34.2,7.0
+2026-11-20,Ridge regression,-1.5,-10.6,22.2,-24.4,5.0
+2026-11-27,Ridge regression,7.3,-1.8,31.0,-34.2,7.0
+2026-11-20,Gradient boosting,-15.4,-33.7,11.4,-24.4,5.0
+2026-11-27,Gradient boosting,4.4,-14.0,31.1,-34.2,7.0
