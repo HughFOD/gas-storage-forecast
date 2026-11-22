@@ -75,7 +75,7 @@ def fetch_storage(refresh: bool = False) -> pd.DataFrame:
         import requests
 
         r = requests.get(config.XLS_URL, timeout=60,
-                         headers={"User-Agent": "gas-storage-nowcast (student project)"})
+                         headers={"User-Agent": "gas-storage-predictor (student project)"})
         r.raise_for_status()
         df = parse_xls(r.content)
         print(f"  Downloaded EIA storage history: {len(df)} weeks")

@@ -16,7 +16,7 @@ import pandas as pd
 
 from . import config
 
-REPO_URL = "https://github.com/HughFOD/gas-storage-nowcast"
+REPO_URL = "https://github.com/HughFOD/gas-storage-predictor"
 
 # Still copied so the README and older links keep working; the page draws its own charts.
 CHARTS = ["forecast_vs_actual.png", "weather_vs_storage.png", "error_by_model.png", "error_over_time.png"]

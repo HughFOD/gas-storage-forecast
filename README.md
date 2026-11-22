@@ -1,6 +1,6 @@
 # Natural gas storage nowcast
 
-**Website: https://hughod.com/gas-storage-nowcast/**
+**Website: https://hughod.com/gas-storage-predictor/**
 
 **Result:** misses the weekly EIA storage number by 13 Bcf on average, vs 31 for the 5-year average, over 253 weeks (2022 to November 2026) that played no part in building the model. The website has the latest numbers.
 
@@ -62,7 +62,7 @@ The website updates itself every day after EIA's release (see `.github/workflows
 
 **Live test:** the week ending Oct 30, 2026 was forecast before EIA's Nov 5 release at about **+83 Bcf** (5-year average +70). EIA reported **+77 Bcf**, so the model was 6 Bcf off and the 5-year average 7 Bcf off.
 
-Project website: **https://hughod.com/gas-storage-nowcast/**
+Project website: **https://hughod.com/gas-storage-predictor/**
 
 ## Analyst consensus (optional)
 
