@@ -511,8 +511,8 @@ def build(src=None, dest=None) -> str:
 <div class=wrap>
 <div class=home><a href="https://hughod.com/">Hugh O'Donnell</a></div>
 <header class=mast>
-<div class=row><span class=brand>Gas Storage Nowcast</span><span class="kicker wide">Energy markets</span></div>
-<div class=row><span class=kicker>Weekly storage forecast</span><span class=tail><span class=kicker>{today:%B %-d, %Y}</span><span class=wide>{repo}</span></span></div>
+<div class=row><span class=brand>Gas Storage Forecast</span><span class="kicker wide">Energy markets</span></div>
+<div class=row><span class=kicker>Weekly EIA prediction</span><span class=tail><span class=kicker>{today:%B %-d, %Y}</span><span class=wide>{repo}</span></span></div>
 </header>
 
 <h1>What will Thursday's gas storage report show?</h1>
